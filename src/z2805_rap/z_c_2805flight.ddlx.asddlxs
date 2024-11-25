@@ -1,0 +1,91 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'CarrierId'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'CarrierId'
+annotate view Z_C_2805FLIGHT with
+{
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  CarrierId;
+  
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  ConnectionId;
+  
+  @UI.identification: [ {
+    position: 30, 
+    label: 'Flight Date'
+  } ]
+  @UI.lineItem: [ {
+    position: 30, 
+    label: 'Flight Date'
+  } ]
+  FlightDate;
+  
+  @UI.identification: [ {
+    position: 35 , 
+    label: 'Plane Type' 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Plane Type' 
+  } ]
+  PlaneTypeId;  
+  
+  @UI.identification: [ {
+    position: 40,
+    label: 'Price'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 ,
+    label: 'Price'
+  } ]
+  Price;
+  
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Currency Code' 
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Currency Code' 
+  } ]
+  CurrencyCode;
+ 
+  @UI.hidden: true
+  LocalCreatedBy;
+  
+  @UI.hidden: true
+  LocalCreatedAt;
+  
+  @UI.hidden: true
+  LocalLastChangedBy;
+  
+  @UI.hidden: true
+  LocalLastChangedAt;
+  
+  @UI.hidden: true
+  LastChangedAt;
+}
